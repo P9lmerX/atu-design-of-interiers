@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FORMA — Студия интерьерного дизайна</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════ UNIVERSITY BADGE ═══════════════════════ -->
+<div class="university-badge">
+  <img src="https://turan.edu.kz/wp-content/themes/turantheme/img/logo.svg"
+       alt="Университет Туран"
+       class="turan-logo"
+       onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+  <div class="turan-logo-fallback" style="display:none">
+    <span class="turan-t">Т</span>
+    <span class="turan-name">ТУРАН</span>
+  </div>
+  <div class="badge-text">
+    <span>Учебный проект</span>
+    <span>Алматы · 2026</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════ NAV ═══════════════════════ -->
+<nav id="nav">
+  <a href="#" class="logo">FORMA</a>
+  <ul class="nav-links">
+    <li><a href="#projects">Проекты</a></li>
+    <li><a href="#services">Услуги</a></li>
+    <li><a href="#process">Процесс</a></li>
+    <li><a href="#contact">Контакт</a></li>
+  </ul>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+</nav>
+
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
+<section class="hero">
+  <div class="hero-text">
+    <span class="hero-label">Студия интерьерного дизайна · Алматы</span>
+    <h1 class="hero-title">
+      Пространство,<br>
+      которое <em>дышит</em><br>
+      вашей жизнью
+    </h1>
+    <p class="hero-desc">
+      Мы создаём интерьеры, где каждая деталь рассказывает историю. 
+      От концепции до воплощения — с вниманием к тому, что 
+      невозможно увидеть, но всегда чувствуешь.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-dark">Смотреть проекты</a>
+      <a href="#contact" class="btn btn-outline">Оставить заявку</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-image-wrap">
+      <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=900&q=80"
+           alt="Интерьер" class="hero-img">
+      <div class="hero-tag">
+        <span class="hero-tag-style">Минимализм</span>
+        <span class="hero-tag-year">2024</span>
+      </div>
+    </div>
+    <div class="hero-side-stats">
+      <div class="hstat"><span class="hstat-n">147</span><span class="hstat-l">Проектов</span></div>
+      <div class="hstat"><span class="hstat-n">12</span><span class="hstat-l">Лет</span></div>
+      <div class="hstat"><span class="hstat-n">6</span><span class="hstat-l">Наград</span></div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Скролл</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ MARQUEE ═══════════════════════ -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span>Жилые пространства</span><span class="dot">◆</span>
+    <span>Коммерческие объекты</span><span class="dot">◆</span>
+    <span>Авторский надзор</span><span class="dot">◆</span>
+    <span>3D-визуализация</span><span class="dot">◆</span>
+    <span>Комплектация</span><span class="dot">◆</span>
+    <span>Жилые пространства</span><span class="dot">◆</span>
+    <span>Коммерческие объекты</span><span class="dot">◆</span>
+    <span>Авторский надзор</span><span class="dot">◆</span>
+    <span>3D-визуализация</span><span class="dot">◆</span>
+    <span>Комплектация</span><span class="dot">◆</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════ ABOUT ═══════════════════════ -->
+<section class="about">
+  <div class="about-label">
+    <span>О студии</span>
+    <div class="label-line"></div>
+  </div>
+  <div class="about-content">
+    <h2 class="about-title">
+      Дизайн — это не<br>украшение.<br>
+      Это <em>язык</em> пространства.
+    </h2>
+    <div class="about-text">
+      <p>
+        FORMA — студия, где архитектурное мышление встречается с тонким 
+        пониманием материи. Мы не следуем трендам — мы создаём среду, 
+        которая останется живой спустя десятилетия.
+      </p>
+      <p>
+        Каждый проект начинается с разговора. Мы слушаем. Изучаем. 
+        Находим суть — и выстраиваем вокруг неё всё остальное.
+      </p>
+      <a href="#process" class="link-arrow">Как мы работаем <span>→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ PROJECTS ═══════════════════════ -->
+<section class="projects" id="projects">
+  <div class="section-head">
+    <div>
+      <p class="section-label">Портфолио</p>
+      <h2 class="section-title">Избранные проекты</h2>
+    </div>
+    <a href="#" class="see-all">Все работы →</a>
+  </div>
+
+  <div class="projects-grid">
+
+    <!-- PROJECT 1: tall -->
+    <article class="card card-tall">
+      <div class="card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80"
+             alt="Пентхаус Тишина" loading="lazy">
+      </div>
+      <div class="card-info">
+        <div class="card-meta">
+          <span class="card-style">Wabi-Sabi</span>
+          <span class="card-area">180 м²</span>
+        </div>
+        <h3 class="card-title">Пентхаус «Тишина»</h3>
+        <p class="card-desc">
+          Философия несовершенства в бетоне и льне. Натуральные фактуры, 
+          теплота дерева, намеренная асимметрия — интерьер, где каждый 
+          изъян становится красотой.
+        </p>
+        <a href="#" class="card-link">Смотреть проект →</a>
+      </div>
+    </article>
+
+    <!-- PROJECT 2 -->
+    <article class="card">
+      <div class="card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=700&q=80"
+             alt="Japandi Kiiro" loading="lazy">
+      </div>
+      <div class="card-info">
+        <div class="card-meta">
+          <span class="card-style">Japandi</span>
+          <span class="card-area">85 м²</span>
+        </div>
+        <h3 class="card-title">Апартаменты «Kiiro»</h3>
+        <p class="card-desc">
+          Японская сдержанность и скандинавский уют. Тёплые дубовые тона, 
+          лён, рисовая бумага — медитация на каждый день.
+        </p>
+        <a href="#" class="card-link">Смотреть проект →</a>
+      </div>
+    </article>
+
+    <!-- PROJECT 3 -->
+    <article class="card">
+      <div class="card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80"
+             alt="Biophilic Greenward" loading="lazy">
+      </div>
+      <div class="card-info">
+        <div class="card-meta">
+          <span class="card-style">Biophilic</span>
+          <span class="card-area">320 м²</span>
+        </div>
+        <h3 class="card-title">Офис Greenward</h3>
+        <p class="card-desc">
+          Природа как архитектура. Живые стены, естественный свет, 
+          органические формы — продуктивность как состояние души.
+        </p>
+        <a href="#" class="card-link">Смотреть проект →</a>
+      </div>
+    </article>
+
+    <!-- PROJECT 4 -->
+    <article class="card card-wide">
+      <div class="card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=900&q=80"
+             alt="Art Deco Villa" loading="lazy">
+      </div>
+      <div class="card-info">
+        <div class="card-meta">
+          <span class="card-style">Art Deco</span>
+          <span class="card-area">460 м²</span>
+        </div>
+        <h3 class="card-title">Резиденция «Ар-Деко»</h3>
+        <p class="card-desc">
+          Золотые пропорции, бархат цвета полночи, мрамор каррара — 
+          пространство, где роскошь подчиняется строгой геометрии.
+        </p>
+        <a href="#" class="card-link">Смотреть проект →</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════ SERVICES ═══════════════════════ -->
+<section class="services" id="services">
+  <div class="services-header">
+    <p class="section-label light">Что мы делаем</p>
+    <h2 class="section-title light">Услуги</h2>
+  </div>
+  <div class="services-grid">
+    <div class="service">
+      <div class="service-num">01</div>
+      <h3>Концепция<br>& Стратегия</h3>
+      <p>Разработка философии пространства. Mood-board, цветовые палитры, стилистическое направление — всё, что определяет характер будущего интерьера.</p>
+    </div>
+    <div class="service">
+      <div class="service-num">02</div>
+      <h3>Проектирование<br>& Визуализация</h3>
+      <p>Полный комплект рабочих чертежей и 3D-визуализация в фотореалистичном качестве. Вы увидите результат ещё до начала работ.</p>
+    </div>
+    <div class="service">
+      <div class="service-num">03</div>
+      <h3>Авторский<br>надзор</h3>
+      <p>Присутствие дизайнера на каждом этапе строительства. Контроль качества, решение нестандартных ситуаций, точное воплощение замысла.</p>
+    </div>
+    <div class="service">
+      <div class="service-num">04</div>
+      <h3>Комплектация<br>& Декор</h3>
+      <p>Подбор мебели, материалов, декора и освещения. Работа с поставщиками и производство под заказ — всё в одном месте.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ QUOTE ═══════════════════════ -->
+<section class="quote-section">
+  <div class="quote-img">
+    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=700&q=80" alt="Интерьер">
+    <div class="quote-img-deco"></div>
+  </div>
+  <div class="quote-body">
+    <div class="quote-mark">"</div>
+    <blockquote>
+      Хороший интерьер — это когда всё на своём месте, 
+      и место это — ваша жизнь
+    </blockquote>
+    <footer class="quote-footer">
+      <div class="quote-line"></div>
+      <div>
+        <strong>Анна Форма</strong>
+        <span>Основатель студии</span>
+      </div>
+    </footer>
+    <div class="quote-awards">
+      <div class="award"><span class="award-n">2023</span><span class="award-l">Best Interior Studio KZ</span></div>
+      <div class="award"><span class="award-n">2022</span><span class="award-l">AD Design Award</span></div>
+      <div class="award"><span class="award-n">2021</span><span class="award-l">ArchDaily Recognition</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ PROCESS ═══════════════════════ -->
+<section class="process" id="process">
+  <div class="section-head">
+    <div>
+      <p class="section-label">Как это работает</p>
+      <h2 class="section-title">Наш процесс</h2>
+    </div>
+  </div>
+  <div class="process-steps">
+    <div class="step">
+      <div class="step-num-wrap"><span class="step-num">01</span></div>
+      <div class="step-body">
+        <h3>Знакомство</h3>
+        <p>Бесплатная консультация, где мы слушаем вас. Ваши привычки, мечты, нелюбимые детали — всё важно.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num-wrap"><span class="step-num">02</span></div>
+      <div class="step-body">
+        <h3>Концепция</h3>
+        <p>Три варианта стилистического направления. Вы выбираете — мы развиваем и детализируем.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num-wrap"><span class="step-num">03</span></div>
+      <div class="step-body">
+        <h3>Проект</h3>
+        <p>Рабочая документация и фотореалистичная визуализация. Подбор всех материалов и мебели.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num-wrap"><span class="step-num">04</span></div>
+      <div class="step-body">
+        <h3>Воплощение</h3>
+        <p>Авторский надзор за ремонтом и финальная расстановка. Ключи — когда сами довольны результатом.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ CONTACT ═══════════════════════ -->
+<section class="contact" id="contact">
+  <div class="contact-info">
+    <p class="section-label">Давайте работать вместе</p>
+    <h2>Начнём<br>разговор?</h2>
+    <p class="contact-desc">
+      Первая консультация всегда бесплатна. 
+      Расскажите нам о своём пространстве — мы ответим в течение 24 часов.
+    </p>
+    <div class="contact-details">
+      <div class="c-detail">
+        <span class="c-icon">✦</span>
+        <div>
+          <strong>Адрес</strong>
+          <span>Алматы, ул. Абая 12</span>
+        </div>
+      </div>
+      <div class="c-detail">
+        <span class="c-icon">✦</span>
+        <div>
+          <strong>Телефон</strong>
+          <span>+7 (727) 000-00-00</span>
+        </div>
+      </div>
+      <div class="c-detail">
+        <span class="c-icon">✦</span>
+        <div>
+          <strong>Email</strong>
+          <span>hello@forma-studio.kz</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <form class="contact-form" onsubmit="handleSubmit(event)">
+    <div class="form-row">
+      <div class="fg">
+        <label>Имя</label>
+        <input type="text" placeholder="Александра" required>
+      </div>
+      <div class="fg">
+        <label>Телефон</label>
+        <input type="tel" placeholder="+7 (700) 000-00-00">
+      </div>
+    </div>
+    <div class="fg">
+      <label>Email</label>
+      <input type="email" placeholder="name@mail.ru" required>
+    </div>
+    <div class="fg">
+      <label>Тип проекта</label>
+      <select>
+        <option value="">Выберите тип</option>
+        <option>Квартира</option>
+        <option>Загородный дом</option>
+        <option>Офис</option>
+        <option>Коммерческий объект</option>
+        <option>Другое</option>
+      </select>
+    </div>
+    <div class="fg">
+      <label>Площадь, м²</label>
+      <input type="text" placeholder="Примерная площадь объекта">
+    </div>
+    <div class="fg">
+      <label>Сообщение</label>
+      <textarea placeholder="Расскажите о вашем проекте..."></textarea>
+    </div>
+    <button type="submit" class="btn btn-dark btn-full">
+      Отправить заявку →
+    </button>
+    <div class="form-success" id="form-success">
+      ✓ Спасибо! Мы свяжемся с вами в течение 24 часов.
+    </div>
+  </form>
+</section>
+
+<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo">FORMA</div>
+      <p>Студия интерьерного дизайна<br>Алматы, Казахстан</p>
+    </div>
+    <div class="footer-nav">
+      <div class="footer-col">
+        <strong>Студия</strong>
+        <a href="#">О нас</a>
+        <a href="#">Проекты</a>
+        <a href="#">Команда</a>
+        <a href="#">Блог</a>
+      </div>
+      <div class="footer-col">
+        <strong>Услуги</strong>
+        <a href="#">Концепция</a>
+        <a href="#">Проектирование</a>
+        <a href="#">Надзор</a>
+        <a href="#">Комплектация</a>
+      </div>
+      <div class="footer-col">
+        <strong>Контакт</strong>
+        <a href="#">+7 (727) 000-00-00</a>
+        <a href="#">hello@forma-studio.kz</a>
+        <a href="#">Instagram</a>
+        <a href="#">Behance</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2024 FORMA Design Studio. Все права защищены.</span>
+    <div class="footer-turan">
+      <span>Учебный проект ·</span>
+      <img src="https://turan.edu.kz/wp-content/themes/turantheme/img/logo.svg"
+           alt="Университет Туран" class="footer-turan-logo"
+           onerror="this.outerHTML='<span class=\'turan-text-logo\'>Университет ТУРАН</span>'">
+      <span>· Алматы</span>
+    </div>
+  </div>
+</footer>
+
+<script src="static/main.js"></script>
+</body>
+</html>
