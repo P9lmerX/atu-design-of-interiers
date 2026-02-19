@@ -68,32 +68,21 @@ a   { text-decoration: none; color: inherit; }
   box-shadow: 0 8px 32px rgba(24,20,15,0.18);
 }
 
-.turan-logo {
+.atu-logo-img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.footer-atu-logo {
   height: 28px;
   width: auto;
   object-fit: contain;
-  filter: saturate(0.8);
-}
-
-.turan-logo-fallback {
-  align-items: center;
-  gap: 6px;
-}
-
-.turan-t {
-  font-family: var(--font-serif);
-  font-size: 22px;
-  font-weight: 600;
-  color: var(--accent);
-  line-height: 1;
-}
-
-.turan-name {
-  font-family: var(--font-sans);
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 2px;
-  color: var(--stone);
+  border-radius: 4px;
+  background: rgba(255,255,255,0.08);
+  padding: 2px 4px;
 }
 
 .badge-text {

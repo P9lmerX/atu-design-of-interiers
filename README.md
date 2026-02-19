@@ -17,8 +17,9 @@ interior-project/
 
 ---
 
-## Запуск 
+## Запуск (вместо uvicorn)
 
+> Uvicorn/FastAPI требует pip-установки.  
 > Этот проект использует встроенный Python-сервер — никаких зависимостей!
 
 ### 1. Убедитесь что Python установлен
@@ -39,6 +40,35 @@ python3 server.py
 ### 4. Откройте в браузере
 ```
 http://localhost:8000
+```
+
+---
+
+## Если хотите uvicorn (установка)
+
+```bash
+pip install uvicorn fastapi
+```
+
+Затем создайте `app.py`:
+
+```python
+from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
+
+app = FastAPI()
+app.mount("/static", StaticFiles(directory="static"), name="static")
+
+@app.get("/")
+def root():
+    return FileResponse("index.html")
+```
+
+И запускайте:
+
+```bash
+uvicorn app:app --reload --port 8000
 ```
 
 ---
@@ -64,4 +94,4 @@ http://localhost:8000
 
 ---
 
-*© 2026 Учебный проект · Университет Туран · Алматы*
+*© 2024 Учебный проект · Университет Туран · Алматы*
