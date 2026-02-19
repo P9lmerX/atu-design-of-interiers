@@ -1,0 +1,10 @@
+services:
+  forma:
+    build: .
+    container_name: forma-site
+    ports:
+      - "80:8000"        # порт 80 = открывается по IP без :8000
+    restart: always      # автозапуск после перезагрузки VPS
+    volumes:
+      - ./static:/app/static   # горячая замена файлов без пересборки
+      - ./index.html:/app/index.html
